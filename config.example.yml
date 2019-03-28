@@ -11,6 +11,6 @@ notifications:
     urgency: critical
     interval:
       quantity: 2
-      unit: minute
+      unit: hour
   # - type: github
   #   name: someone wants your review!
