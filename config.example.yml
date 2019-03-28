@@ -1,0 +1,16 @@
+notifications:
+  # - type: interval
+  #   title: test
+  #   message: this is a cool test
+  #   interval:
+  #     quantity: 2
+  #     unit: hour
+  - type: interval
+    title: save yer back => stand up desk
+    message: if you're sitting down, it's time to stand up!
+    urgency: critical
+    interval:
+      quantity: 2
+      unit: minute
+  # - type: github
+  #   name: someone wants your review!

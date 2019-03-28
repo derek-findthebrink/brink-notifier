@@ -1,0 +1,5 @@
+User Stories:
+  ✔ (US1) As a desk user, I want to be notified when I need to convert my desk to a standing desk @done(19-03-28 00:24)
+    message => "if you are sitting, it's time to stand up!"
+
+  ☐ As a person waiting for reviews on my pull requests, I want to receive notifications when activity happens on my PR's

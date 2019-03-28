@@ -1,0 +1,58 @@
+{
+  "name": "brink-notifier",
+  "description": "stay on top of time and activities with notifications",
+  "version": "0.0.0",
+  "author": "Derek @derek-findthebrink",
+  "bin": {
+    "brink-notifier": "./bin/run"
+  },
+  "bugs": "https://github.com/derek-findthebrink/brink-notifier/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "js-yaml": "^3.13.0",
+    "node-notifier": "^5.4.0",
+    "ora": "^3.2.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "eslint": "^5.5",
+    "eslint-config-oclif": "^3.1",
+    "globby": "^8",
+    "mocha": "^5",
+    "nyc": "^13"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/derek-findthebrink/brink-notifier",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "brink-notifier",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "derek-findthebrink/brink-notifier",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
