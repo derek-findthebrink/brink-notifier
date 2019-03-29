@@ -8,6 +8,12 @@
     "object-curly-spacing": [
       "error",
       "always"
+    ],
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "camelCase"
+      }
     ]
   }
 }
